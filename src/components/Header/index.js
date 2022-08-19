@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom'
-import Me from '../../assets/images/me.jpg'
+// import Me from '../../assets/images/me.jpg'
 import './header.sass'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
