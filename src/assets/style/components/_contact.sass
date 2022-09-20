@@ -1,0 +1,54 @@
+.contact
+    background: darken($clr-main, 15%)
+    position: relative
+    padding: $blh 0
+    &__title
+        @extend .title
+        position: absolute
+        top: $blh
+        left: 0
+    &__container
+        @extend .container
+    &__form
+        padding: $blh 0
+        margin: calc($blh * 3) 0 $blh 0
+        display: flex
+        flex-wrap: wrap
+        +media-screen("max", $xs)
+            flex-wrap: no-wrap
+        &-col
+            margin: 0 2%
+            width: 45%
+            +media-screen("max", $xs)
+                margin: 0
+                width: 100%
+        &-label
+            display: block
+            font-size: calc($fs / 1.6)
+            text-transform: uppercase
+            letter-spacing: 3px
+            color: #fff
+            margin: $blh 0
+        &-input
+            display: block
+            padding: calc($blh / 2) calc($blh / 1.3)
+            font-size: $fs
+            width: 100%
+        &-textarea
+            @extend .contact__form-input
+            min-height: 170px
+            width: 100%
+        &-btn
+            background: $clr-y
+            display: block
+            margin: calc($blh/2) 0
+            border: none
+            font-size: $fs * 1.3
+            padding: calc($blh/1.6) calc($blh * 3.2) calc($blh/1.6) calc($blh * 1.8)
+            text-transform: uppercase
+            color: $clr-main
+            -webkit-clip-path: polygon(0 0, 75% 0%, 85% 50%, 75% 100%, 0 100%, 0% 50%)
+            clip-path: polygon(0 0, 75% 0%, 85% 50%, 75% 100%, 0 100%, 0% 50%)
+            &:hover
+                cursor: pointer
+                background: darken($clr-y, 5%)

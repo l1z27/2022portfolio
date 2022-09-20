@@ -1,0 +1,62 @@
+.header
+    background: $clr-y
+    padding: calc($blh *5) $blh
+    +media-screen('max', $sm)
+        padding: calc($blh *3) $blh
+    &__ghost
+        @extend .title
+        position: absolute
+        top: 0
+        right: 0
+        opacity: 0.1
+    &__social
+        display: block
+        width: 205px
+        margin: -240px auto 0
+        +media-screen('max', $sm)
+            margin: auto
+    &__title
+        @extend .title
+        font-size: calc($fs * 4.6)
+        text-align: center
+        margin: 0 0 0 199px
+        +media-screen('max', $sm)
+            font-size: calc($fs * 3)
+            margin: 0
+        &-sub
+            text-transform: uppercase
+            text-align: center
+            letter-spacing: 5px
+            font-size: $fs - 2
+            margin-top: -$blh
+            +media-screen('max', $sm)
+               font-size: $fs - 4 
+               letter-spacing: 3px
+    &__txt
+        font-size: $fs * 1.2
+        text-align: justify
+    &__content
+        max-width: 500px
+        margin: $blh auto
+.icons
+    font-size: $fs * 3
+    margin: $blh
+.hex 
+    display: block
+    position: relative
+    margin-left: calc(50vw - 600px)
+    width: 380px
+    height: 350px
+    background: lighten($clr-y, 10%)
+    -webkit-clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%)
+    clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%)
+    +media-screen('max', $sm)
+        margin: auto
+    img
+        position: absolute
+        top: 2.5%
+        left: 2.5%
+        width: 95%
+        height: 95%
+        -webkit-clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%)
+        clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%)

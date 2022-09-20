@@ -1,0 +1,109 @@
+///////////////////////////////////////////////
+///MIXINS
+
+//////////////////////////////////////////////
+// Media Break Points & Query Mixin
+$xxs: 376px
+$xs: 576px
+$sm: 768px
+$md: 992px
+$lg: 1200px
+$xlg: 1400px
+// Media Query: Screen by Width
+=media-screen($type: false, $bp: false, $bp2: false)
+    @if ($type == 'min') and ($bp != false)
+        @media screen and (min-width: $bp)
+            @content
+    @else if ($type == 'max') and ($bp != false)
+        @media screen and (max-width: ($bp - 1))
+            @content
+    @else if ($type == 'range') and ($bp != false) and ($bp2 != false)
+        @media screen and (min-width: $bp) and (max-width: ($bp2 - 1))
+            @content
+
+//Animation ---  animation-name, animation-duration, animation-timing-function, animation-delay, animation-iteration-count, animation-direction, animation-fill-mode, and animation-play-state.
+=animation($anime)
+    -moz-animation: $anime
+    -webkit-animation: $anime
+    animation: $anime
+
+//Transition ---  property duration timing-function delay|initial|inherit;
+=transition($transition: all .3s ease-out)
+    transition: $transition
+    -webkit-transition: $transition
+    -moz-transition: $transition
+    -ms-transition: $transition
+    -o-transition: $transition
+
+=transition-2($prop-a, $prop-b)
+    transition: $prop-a, $prop-b
+    -webkit-transition: $prop-a, $prop-b
+    -moz-transition: $prop-a, $prop-b
+    -ms-transition: $prop-a, $prop-b
+    -o-transition: $prop-a, $prop-b
+
+//Transform --- none|transform-functions|initial|inherit;
+=transform($transform: none)
+    transform: $transform
+    -webkit-transition: $transform
+    -moz-transition: $transform
+    -ms-transition: $transform
+    -o-transform: $transform
+
+//Filter ---  none | blur() | brightness() | contrast() | drop-shadow() | grayscale() | hue-rotate() | invert() | opacity() | saturate() | sepia() | url();
+=filter($filter: none)
+    filter: $filter
+    -ms-filter: $filter
+    -webkit-filter: $filter
+
+=user-select($user-select: none)
+    user-select: $user-select
+    -webkit-user-select: $user-select
+    -moz-user-select: $user-select
+    -ms-user-select: $user-select
+
+//Border Radius --- num
+=border-radius($border-radius: 5px)
+    border-radius: $border-radius
+    -webkit-border-radius: $border-radius
+    -moz-border-radius: $border-radius
+    -ms-border-radius: $border-radius
+
+//Box Shadow --- none|h-offset v-offset blur spread color |inset|initial|inherit;
+=box-shadow($boxshadow: 0 0 10px 10px rgba(0,0,0,0.7))
+    box-shadow: $boxshadow
+    -webkit-box-shadow: $boxshadow
+    -moz-box-shadow: $boxshadow
+
+//Text Shadow --- h-shadow v-shadow blur-radius color|none|initial|inherit;
+=text-shadow($text-shadow: 0 0 5px rgba(0,0,0,0.3))
+    -webkit-font-smoothing: antialiased
+    text-shadow: $text-shadow
+    -webkit-text-shadow: $text-shadow
+
+
+=container($container)
+    width: 100%
+    max-width: $container
+    margin: auto
+    padding: $blh
+    &:after
+        clear: both
+    +media-screen('max', $sm)
+        padding: $blh calc($blh/2)
+
+
+
+
+    
+//////////////////////////////////////////////////////////////////////////////////
+//ANIMATION
+@keyframes jiggle
+    0% 
+        transform: rotate(0deg)
+    30%
+        transform: rotate(20deg)
+    60%
+        transform: rotate(-30deg)
+    100% 
+        transform: rotate(0deg)

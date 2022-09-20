@@ -1,0 +1,100 @@
+.portfolio
+    background: lighten($clr-main, 40%)
+    position: relative
+    padding: $blh 0
+    &__title
+        @extend .title
+        position: absolute
+        top: $blh
+        left: 0
+    &__container
+        @extend .container
+
+.project
+    &__item
+        flex-shrink: 2
+        display: flex
+        flex-wrap: nowrap
+        align-items: flex-start 
+        margin: calc($blh * 7) 0
+        +media-screen('max', $md)
+            flex-wrap: wrap
+            margin: calc($blh * 8) 0
+        +media-screen('max', $md)
+            margin: calc($blh * 5) 0
+    &__img
+        border: solid 1px $clr-main
+        display: inline-block
+        order: 2
+        height: 90vh
+        margin-top: -$blh
+        +transition()
+        &:hover
+            width: 60vh
+            height: inherit
+        +media-screen('max', $md)
+            margin: auto 0 auto auto
+            order: 1
+            height: auto
+            width: 35vh
+            &:hover
+                height: auto
+                width: 35vh
+    &__content
+        display: inline-block
+        padding: $blh
+        order: 1
+        position: relative
+        padding: calc($blh * 2)
+        background: darken($clr-main, 15%)
+        margin: $blh
+        width: 420px
+        color: #fff
+        +media-screen('max', $md)
+            width: 100%
+            max-width: 420px
+            margin: 0 0 0 8%
+            order: 1
+        +media-screen('max', $sm)
+            margin: 0 0 200px 8%
+    &__title
+        font-size: calc($fs * 1.6)
+        font-weight: 100
+    &__tech
+        margin: calc($blh/2) 0
+        font-weight: 100
+    &__caption
+        background: $clr-y
+        margin: -105px 0 0 -105px 
+        font-weight: 900
+        font-size: $fs
+        text-transform: uppercase
+        color: $clr-main
+        padding: 35px 0
+        text-align: center
+        width: 105px
+        height: 100px
+        -webkit-clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%)
+        clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%)
+    &__btn
+        background: $clr-y
+        display: block
+        position: absolute
+        right: -10px
+        bottom: -1px
+        margin: $blh 0 -$blh 0
+        border: none
+        padding: calc($blh/2) calc($blh * 2) calc($blh/2) $blh
+        text-transform: uppercase
+        color: $clr-main
+        -webkit-clip-path: polygon(0 0, 75% 0%, 75% 50%, 75% 100%, 0 100%, 0% 50%)
+        clip-path: polygon(0 0, 75% 0%, 75% 50%, 75% 100%, 0 100%, 0% 50%)
+        &:hover
+            cursor: pointer
+            -webkit-clip-path: polygon(0 0, 75% 0%, 85% 50%, 75% 100%, 0 100%, 0% 50%)
+            clip-path: polygon(0 0, 75% 0%, 85% 50%, 75% 100%, 0 100%, 0% 50%)
+            background: darken($clr-y, 5%)
+            
+            
+            
+    

@@ -1,0 +1,85 @@
+$clr-main: #676f7e
+$clr-b: #b9c9e4
+$clr-w: #dfdcd8
+$clr-y: #f8da8b
+
+$ff-main: Helvetica Neue, Arial, sans-serif
+$ff-title: 'La Belle Aurore', cursive
+$fs: 16px
+$blh: 28px
+
+$container: 1280px
+@import 'components/_mixins.sass'
+
+//////////////////////////////////////////////////
+////////RESET
+*, 
+*:before,
+*:after
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+
+input,
+textarea
+  font-family: $ff-main
+
+body
+  background: darken($clr-main, 5%)
+  color: lighten(#000, 0.9)
+  display: block
+  margin: 0
+  font-size: $fs
+  font-family: $ff-main
+  line-height: $blh
+a,
+a:visited
+  color: $clr-main
+  text-decoration: none
+
+.link
+    color: $clr-main
+    font-weight: 700
+    &:hover
+        text-decoration: underline
+        cursor: pointer
+
+
+.title
+    font-family: $ff-title
+    color: $clr-main
+    font-size: calc($fs * 5)
+    line-height: normal
+    font-weight: 100
+
+
+
+code
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace
+
+.container
+  +container($container)
+  padding: $blh
+  font: 300 16px/26px $ff-main
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  &--flex
+    display: flex
+    align-items: flex-start
+    +media-screen('max', $sm)
+        flex-wrap: wrap
+
+
+
+code
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace
+
+
+
+
+@import 'components/_header.sass'
+@import 'components/_portfolio.sass'
+@import 'components/_contact.sass'
+@import 'components/_footer.sass'

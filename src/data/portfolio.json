@@ -1,20 +1,84 @@
 {
     "portfolio": [
         {
+            "img": "/img/portfolio/mfgt.png",
+            "tech": "Tech: HTML, SASS/CSS, JavaScript, React, NPM",
+            "software": "Software: VS Code, Adobe Creative Cloud, Git",
+            "company": "Freelance",
+            "caption": "MFGT",
+            "title": "Manufacturing Turnarounds",
+            "description": "Consulting firm specializing in Manufacturing required a corperate website to gather more consultants and business partners. Handcoded website developed with React, HTML, SASS, EmailJs. The Consultants page gathers data from a  JSON file to make adding and removing people fast and easy - this will probably be expanded so that the client will have access to remove entries as well.",
+            "url": "https://bottomsuporganics.com/mfgt"
+        },
+        {
+            "img": "/img/portfolio/buo.png",
+            "tech": "Tech: HTML, SASS/CSS, JavaScript, jQuery, PHP",
+            "software": "Software: VS Code, Adobe Creative Cloud, Git",
+            "company": "Freelance",
+            "caption": "BUO",
+            "title": "Bottoms Up Organics",
+            "description": "Local farmer needed a site outside of facebook where they could promote what's going on at the farm. Designed and developed via PHP to add dynamic components - header, footer, email sign up - with a simple contact us form. Backend functionality is currently underdevelopment that will allow users to order produce based on stock added by the farmer and manage his stock & customer requests. All images sourced from Pexel. ",
+            "url": "https://bottomsuporganics.com/"
+        },
+        {
             "img": "/img/portfolio/apm.png",
-            "tech": "html",
-            "company": "apollo",
-            "title": "APM",
-            "description": "Laravel, HTML",
-            "url": "http://google.com"
+            "tech": "Tech: HTML, SASS/CSS, JavaScript, jQuery, PHP, Laravel 5.2.45, Gulp, Webpack, NPM",
+            "software": "Software: VS Code, Adobe Creative Cloud, Intervals, Git, Browserstack, Email on Acid, Google Workspace + Optimize + Inspect Tools, Apollo Internal Tools",
+            "company": "Apollo",
+            "caption": "APM",
+            "title": "Auto Policy Market",
+            "description": "Lead Generation site built on a shared Laravel template to share custom built Front-end framework SASS/CSS and JavaScript validation. Handcoded site with custom css animations and transitions ",
+            "url": "https://www.autopolicymarket.com/"
+        },
+        {
+            "img": "/img/portfolio/cess.png",
+            "tech": "Tech: HTML, SASS/CSS, JavaScript, jQuery, PHP",
+            "software": "Software: VS Code, Adobe Creative Cloud, Git",
+            "company": "Freelance",
+            "caption": "CESS",
+            "title": "Cutting Edge Stainless Steel",
+            "description": "Custom fabrication and installation company looking to boost sales and display past work efforts. Designed and developed via PHP with emphesis on SEO - currently ranked on the second page on google for 'stainless steel los angeles' - the site sees an average of 200 visitors every month.",
+            "url": "https://www.cuttingedgestainlesssteel.com/"
         },
         {
             "img": "/img/portfolio/apollo.png",
-            "tech": "laravel",
+            "tech": "Tech: HTML, SASS/CSS, JavaScript, jQuery, PHP",
+            "software": "Software: VS Code, Adobe Creative Cloud, Intervals, Git, Browserstack, Google Workspace + Optimize + Inspect Tools",
             "company": "apollo",
+            "caption": "AI",
             "title": "Apollo Interactive",
-            "description": "HTML, css",
-            "url": "http://reddit.com"
+            "description": "Company website redesign overhaul developed via PHP, HTML, SASS, and GULP. All content already existed, so the focus was soly based on design and functionality.",
+            "url": "https://apollointeractive.com/"
+        },
+        {
+            "img": "/img/portfolio/MM.png",
+            "tech": "Tech: HTML, SASS/CSS, JavaScript, jQuery, PHP, Laravel 5.2.45, Gulp, Webpack, NPM",
+            "software": "Software: VS Code, Adobe Creative Cloud, Intervals, Git, Browserstack, Email on Acid, Google Workspace + Optimize + Inspect Tools, Apollo Internal Tools",
+            "company": "Apollo",
+            "caption": "MM",
+            "title": "Medicare Market",
+            "description": "Lead Generation site built on a shared Laravel template to share custom built Front-end framework SASS/CSS and JavaScript validation. Handcoded site with custom css animations and transitions. After launching we extensively tested multiple images and layouts via Google Optimize to select the design that had the best interaction with the users.",
+            "url": "https://www.medicaremarket.com/"
+        },
+        {
+            "img": "/img/portfolio/mcf.png",
+            "tech": "Tech: HTML, SASS/CSS, JavaScript, jQuery, PHP, Laravel 5.2.45, Gulp, Webpack, NPM",
+            "software": "Software: VS Code, Adobe Creative Cloud, Intervals, Git, Browserstack, Email on Acid, Google Workspace + Optimize + Inspect Tools, Apollo Internal Tools",
+            "company": "Apollo",
+            "caption": "MCF",
+            "title": "Medicare Coverage Finder",
+            "description": "Lead Generation site built on a shared Laravel template to share custom built Front-end framework SASS/CSS and JavaScript validation. Handcoded site with custom css animations and transitions. This became the number 1 medicare site for the company that resulted in the highest ROI and set an example of future site esthetic and structure. ",
+            "url": "https://www.medicarecoveragefinder.com/"
+        },
+        {
+            "img": "/img/portfolio/mpn.png",
+            "tech": "Tech: HTML, SASS/CSS, JavaScript, jQuery, PHP, Laravel 5.2.45, Gulp, Webpack, NPM",
+            "software": "Software: VS Code, Adobe Creative Cloud, Intervals, Git, Browserstack, Email on Acid, Google Workspace + Optimize + Inspect Tools, Apollo Internal Tools",
+            "company": "Apollo",
+            "caption": "MPN",
+            "title": "Medicare Plan",
+            "description": "Lead Generation site built on a shared Laravel template to share custom built Front-end framework SASS/CSS and JavaScript validation. Handcoded site with custom css animations and transitions. The next iteration after the success of MCF this layout promoted partner ads, phone calls, and increased our click thru rate significantly. ",
+            "url": "https://www.medicareplan.net/"
         }
       
     ]
